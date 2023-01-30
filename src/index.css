@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+.App {
+  background-color: hsl(229, 24%, 87%);
+}
+.active {
+  background-color: #eaeaea;
+  color: black;
+}
+.active-plan {
+  border-color: hsl(213, 96%, 18%);
+}
+.active-add-on {
+  border-color: hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+.active-add-on .tick {
+  background-color: hsl(243, 100%, 62%);
+  border-color: hsl(243, 100%, 62%);
+}
+.summary {
+  background-color: hsl(231, 100%, 99%);
+}
+.required {
+  color: red;
+}
+.required-input {
+  border-color: red;
+  outline: none;
+}
+@media screen and (max-width: 500px) {
+  .App {
+    background-image: url("./assets/images/bg-sidebar-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .menu-img {
+    display: none;
+  }
+  .steps {
+    margin-left: calc(63vw - 225px);
+  }
+}
